@@ -5,7 +5,9 @@ const cors = require('cors');
 
 //Express app
 const app = express();
-require('dotenv').config();
+if (process.env.NODE_ENV !== "production") {
+    require("dotenv").config();
+}  
 
 //Middleware
 app.use(express.json({ extended: false }));
