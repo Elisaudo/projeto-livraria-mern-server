@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
-
 const config = require('config');
-//require('dotenv').config();
+require('dotenv').config();
 
+/*
 if (process.env.NODE_ENV !== "production") {
     require("dotenv").config();
 }  
+*/
 
 //const db = config.get('mongoURI');
 const uri = process.env.MONGODB_URI;

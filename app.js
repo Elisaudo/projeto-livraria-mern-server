@@ -2,12 +2,16 @@ const express = require('express');
 const connectDB = require('./config/db');
 const booksRoutes = require('./routes/api/books');
 const cors = require('cors');
+require("dotenv").config();
 
 //Express app
 const app = express();
+
+/*
 if (process.env.NODE_ENV !== "production") {
     require("dotenv").config();
 }  
+*/
 
 //Middleware
 app.use(express.json({ extended: false }));
