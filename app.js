@@ -18,6 +18,7 @@ if (process.env.NODE_ENV !== "production") {
 app.use(express.json({ extended: false }));
 //app.get('/', (req, res) => res.send('Hello world!'));
 
+/*
 //Conecta o Banco de Dados
 const uri = process.env.MONGODB_URI;
 
@@ -36,7 +37,7 @@ const connectDB = async () => {
 
 connectDB();
 
-
+*/
 
 
 // Cors
