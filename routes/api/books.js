@@ -11,13 +11,11 @@ router.get('/test', (req,res) => res.send('Testando rota book'));
 
 //GET api/books
 //Pegar todos os livro
-/*
 router.get('/', (req,res) => {
     Book.find()
     .then(books => res.json(books))
     .catch(err => res.status(404).json({nobooksfound:'Nenhum livro encontrado'}));
 });
-*/
 
 //GET api/book/:id
 router.get('/:id', (req,res) => {

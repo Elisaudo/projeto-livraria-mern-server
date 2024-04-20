@@ -15,7 +15,7 @@ if (process.env.NODE_ENV !== "production") {
 
 //Middleware
 app.use(express.json({ extended: false }));
-app.get('/', (req, res) => res.send('Hello world!'));
+//app.get('/', (req, res) => res.send('Hello world!'));
 
 //Conecta o Banco de Dados
 connectDB();
