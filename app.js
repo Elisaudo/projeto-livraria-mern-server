@@ -26,6 +26,6 @@ app.use(cors({ origin: true, credentials: true }));
 //Routes
 app.use('/api/books', booksRoutes);
 
-const port = process.env.PORT || 8082;
+const port = process.env.PORT;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
